@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VersatileText</title>
+   <!-- css -->
+   <link rel="stylesheet" type="text/css" href="./Assets/CSS/font.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css">
+    <link  rel="icon"  href="Assets/IMAGE/logo.png" >
+</head>
+
+<body id="screen">
+
+    <section class="container">
+        <!-- navigation bar -->
+        <nav class="navigation">
+
+            
+
+            <!-- more option -->
+            <div class="nav-option">
+
+                <!-- option -->
+             <div class="option-container opting" onclick="showMoreOptions()" >
+                <button class="option" title="option" id="opt">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11H7.01M12 11H12.01M9.5 11H9.51M15 10C15 13.3137 16.3431 16 18 16C19.6569 16 21 13.3137 21 10C21 6.68629 19.6569 4 18 4M15 10C15 6.68629 16.3431 4 18 4M15 10V14C15 15.8441 14.4749 18.7262 14 20H3C3.47493 18.7262 4 15.8441 4 14V10C4 6.68629 5.34315 4 7 4H18" stroke="var(--fColor--)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            Option
+                </button>
+            </div>
+
+                <button title="upload" class="btn path upload" id="upload">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    UPLOAD
+                </button>
+
+           
+            <!-- logo -->
+            <div class="logo-container">
+                <div class="logo"></div>
+            </div>
+
+
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: column; padding: 10px 0;">
+
+             <!-- option -->
+             <div class="option-container opting2 moreOption" onclick="showMoreOptions()">
+                <button class="option" id="opt" title="Option">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11H7.01M12 11H12.01M9.5 11H9.51M15 10C15 13.3137 16.3431 16 18 16C19.6569 16 21 13.3137 21 10C21 6.68629 19.6569 4 18 4M15 10C15 6.68629 16.3431 4 18 4M15 10V14C15 15.8441 14.4749 18.7262 14 20H3C3.47493 18.7262 4 15.8441 4 14V10C4 6.68629 5.34315 4 7 4H18" stroke="var(--fColor--)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Option
+                    
+                </button>
+            </div>
+
+            <div class="optionContainer">
+                <div class="optionContent">
+                    <button class="upBtn upTop  closeBtn" title="CLOSE" id="optClose" onclick="closeOptions()">
+                        <a>
+                            <div class="ico closeIco">
+                                <svg class="close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
+                            <div class="iText">
+                                <div class="iHead">CLOSE</div>
+                            </div>
+                        </a>
+                    </button>
+                    <!-- range -->
+                    <div class="optBtn optTopBtn">
+                        <div style="padding: 2px;">Font Size</div>
+                        <div class="f">
+                            <svg style="width: 20px !important; height: 20px !important;" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            width="800px" height="800px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                       <g>
+                           <polyline fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" points="28,43 43,1 44,1 59,43 	"/>
+                           <line fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" x1="33" y1="29" x2="54" y2="29"/>
+                       </g>
+                       <g>
+                           <polyline fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" points="5,43 13,20 14,20 22,43 	"/>
+                           <line fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" x1="7" y1="36" x2="20" y2="36"/>
+                       </g>
+                       <polyline fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="56,63 63,56 
+                           56,49 "/>
+                       <polyline fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="8,49 1,56 8,63 
+                           "/>
+                       <g>
+                           <line fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" x1="63" y1="56" x2="1" y2="56"/>
+                       </g>
+                       </svg>
+                            <input type="range" class="slider" id="theRange" min="10" max="100" step="1" value="16" oninput="changeFontSize(this.value)" />
+  <label id="fontSizeValue" for="theRange">16</label>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="optBtn FRContainer">
+                        <div class="iFR">
+                            <!-- findInput -->
+                        <input type="text" placeholder="Find" id="findInput">
+                        <svg fill="var(--color2--)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521.92 521.92"
+	 xml:space="preserve">
+<g>
+	<path d="M230.088,104.839c0-4.422,1.732-8.589,4.862-11.715l88.428-88.425c6.253-6.265,17.17-6.265,23.424,0
+		c6.461,6.455,6.461,16.97,0,23.431l-60.153,60.142h87.337c73.737,0,133.726,59.988,133.726,133.726
+		c0,69.604-69.771,124.74-118.015,129.321c-6.703,0.018-14.865-5.68-12.88-18.914c2.418-8.559,19.252-12.359,20.292-12.602
+		c44.337-10.48,77.467-50.301,77.467-97.806c0-55.467-45.123-100.59-100.59-100.59H286.66l60.142,60.154
+		c6.461,6.454,6.461,16.964,0,23.424c-6.266,6.271-17.171,6.254-23.424,0l-88.428-88.431
+		C231.82,113.427,230.088,109.266,230.088,104.839z M232.311,350.697h-46.849l49.812,49.811h-87.331
+		c-55.473,0-100.596-45.129-100.596-100.59c0-16.248,3.975-31.521,10.894-45.075c-1.132-2.896-2.196-5.798-3.121-8.677
+		c-3.047-9.481-4.688-19.305-5.612-29.241c-20.555,22.325-35.299,51.081-35.299,82.993c0,73.743,59.988,133.731,133.729,133.731
+		h87.331l-60.151,60.142c-6.452,6.455-6.452,16.965,0,23.431c6.254,6.266,17.171,6.266,23.424,0l88.438-88.431
+		c3.126-3.121,4.853-7.294,4.853-11.709c0-4.428-1.732-8.589-4.853-11.722L232.311,350.697z M307.809,282.014
+		c12.105-16.42,19.843-35.051,23.33-54.296c-14.098-11.106-26.941-23.933-38.261-37.569c4.374,28-4.008,57.612-25.54,79.146
+		c-35.813,35.813-94.079,35.813-129.883,0c-35.816-35.813-35.816-94.076,0-129.883c21.092-21.101,49.925-29.43,77.416-25.629
+		c1.782-14.333,6.345-28.105,17.803-35.979c-40.202-10.485-92.249,3.127-122.979,33.857c-51.107,51.104-51.107,134.275,0,185.391
+		c46.388,46.388,119.099,50.52,170.363,12.72L444.772,474.48c7.661,7.673,20.091,7.673,27.758,0c7.66-7.66,7.66-20.084,0-27.75
+		L307.809,282.014z"/>
+</g>
+</svg>
+
+<!-- replaceInput -->
+                        <input type="text" placeholder="Repalce" id="replaceInput">
+                        </div>
+                        <a></a>
+                        <button class="replace" style="padding: 10px;border: none;background-color: var(--bCPrimary--);border-radius: 1pc;" onclick="findAndReplace()">REPLACE</button>
+                    </div>
+
+                    <!--  -->
+                    <div class="optBtn optSecondBtn">
+                        <button class="optf optfL" title="Word Spacing" onclick="changeWordSpacing(5)">
+                            <p id="wordSpacingValue">5px</p>
+                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                                <g>
+                                    <polyline fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" points="5,35 13,12 14,12 22,35 	"/>
+                                    <line fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" x1="7" y1="28" x2="20" y2="28"/>
+                                </g>
+                                <g>
+                                    <polyline fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" points="42,35 50,12 51,12 59,35 	"/>
+                                    <line fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" x1="44" y1="28" x2="57" y2="28"/>
+                                </g>
+                                <g>
+                                    <g>
+                                        <line fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" x1="32" y1="6" x2="32" y2="8"/>
+                                        
+                                            <line fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4,2" x1="32" y1="10" x2="32" y2="39"/>
+                                        <line fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" x1="32" y1="40" x2="32" y2="42"/>
+                                    </g>
+                                </g>
+                                <polyline fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="55,63 62,56 
+                                    55,49 "/>
+                                <polyline fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="9,49 2,56 9,63 
+                                    "/>
+                                <g>
+                                    <line fill="none" stroke="var(--fColor--)" stroke-width="2" stroke-miterlimit="10" x1="62" y1="56" x2="2" y2="56"/>
+                                </g>
+                                </svg>
+                            <div>Font Spacing</div>
+                        </button>
+
+
+                        <button class="optf optfR" title="Font Style" onclick="changeFontFamily()">
+                            <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M2.5 4.5C2.5 3.09886 3.59886 2 5 2H12.499C12.7752 2 13 2.22386 13 2.5C13 2.77614 12.7761 3 12.5 3H8.69244L8.40509 3.85458C8.18869 4.49752 7.89401 5.37197 7.58091 6.29794C7.50259 6.52956 7.42308 6.76453 7.34332 7H8.5C8.77614 7 9 7.22386 9 7.5C9 7.77614 8.77614 8 8.5 8H7.00407C6.56724 9.28543 6.16435 10.4613 5.95799 11.0386C5.63627 11.9386 5.20712 12.4857 4.66741 12.7778C4.16335 13.0507 3.64154 13.0503 3.28378 13.05L3.25 13.05C2.94624 13.05 2.7 12.8037 2.7 12.5C2.7 12.1962 2.94624 11.95 3.25 11.95C3.64182 11.95 3.9035 11.9405 4.14374 11.8105C4.36443 11.691 4.65532 11.4148 4.92217 10.6683C5.10695 10.1514 5.45375 9.14134 5.8422 8H4.5C4.22386 8 4 7.77614 4 7.5C4 7.22386 4.22386 7 4.5 7H6.18187C6.30127 6.64785 6.42132 6.29323 6.53887 5.94559C6.85175 5.02025 7.14627 4.14631 7.36256 3.50368L7.53192 3H5C4.15114 3 3.5 3.65114 3.5 4.5C3.5 4.77614 3.27614 5 3 5C2.72386 5 2.5 4.77614 2.5 4.5Z"
+                                  fill="var(--fColor--)"
+                                />
+                              </svg>
+                              <div>Font Style</div>
+                        </button>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <!-- mode -->
+            
+
+                <div class="mode-container">
+                    <button class="mode" id="mode" title="Toggle Dark/Light Mode">
+                        
+                    </button>
+                    <label for="mode">THEME</label>
+                </div>
+
+                </div>
+                
+            </div>
+
+        </nav>
+        <!-- main-screen -->
+        <main class="main-container">
+            <!-- mode -->
+            <iframe src="./Assets/EXTRANAL/TEXTReader.html" name="connect" frameborder="0" id="myIframe" title="connect"></iframe>
+        </main>
+        <div class="option-screen" id="option-screen">
+            <div class="upScreen">
+                <div class="line-container"><div class="line"></div></div>
+                <div class="upScreen-container">
+                    <button class="upBtn upTop  closeBtn" id="close" title="CLOSE">
+                        <a>
+                            <div class="ico closeIco">
+                                <svg class="close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
+                            <div class="iText">
+                                <div class="iHead">CLOSE</div>
+                            </div>
+                        </a>
+                    </button>
+                    <button class="upBtn" title="TEXT Reader">
+                        <a href="./Assets/EXTRANAL/TEXTReader.html" target="connect">
+                            <div class="ico">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.25 17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17H11.25ZM15.25 9.75C15.25 10.1642 15.5858 10.5 16 10.5C16.4142 10.5 16.75 10.1642 16.75 9.75H15.25ZM7.25 9.75C7.25 10.1642 7.58579 10.5 8 10.5C8.41421 10.5 8.75 10.1642 8.75 9.75H7.25ZM15.7071 7.32544L16.2646 6.82371V6.82371L15.7071 7.32544ZM9.5 16.25C9.08579 16.25 8.75 16.5858 8.75 17C8.75 17.4142 9.08579 17.75 9.5 17.75V16.25ZM15 17.75C15.4142 17.75 15.75 17.4142 15.75 17C15.75 16.5858 15.4142 16.25 15 16.25V17.75ZM10 7.75H12V6.25H10V7.75ZM12 7.75H14V6.25H12V7.75ZM12.75 17V7H11.25V17H12.75ZM15.25 9.22222V9.75H16.75V9.22222H15.25ZM7.25 9.22222V9.75H8.75V9.22222H7.25ZM14 7.75C14.4949 7.75 14.7824 7.75196 14.9865 7.78245C15.0783 7.79617 15.121 7.8118 15.1376 7.8194C15.148 7.82415 15.1477 7.82503 15.1496 7.82716L16.2646 6.82371C15.96 6.4853 15.579 6.35432 15.2081 6.29891C14.8676 6.24804 14.4479 6.25 14 6.25V7.75ZM16.75 9.22222C16.75 8.71757 16.7513 8.27109 16.708 7.91294C16.6629 7.54061 16.559 7.15082 16.2646 6.82371L15.1496 7.82716C15.1523 7.83015 15.1609 7.83939 15.1731 7.87221C15.1873 7.91048 15.2048 7.97725 15.2188 8.09313C15.2487 8.34011 15.25 8.67931 15.25 9.22222H16.75ZM10 6.25C9.55208 6.25 9.13244 6.24804 8.79192 6.29891C8.42102 6.35432 8.04 6.4853 7.73542 6.82371L8.85036 7.82716C8.85228 7.82503 8.85204 7.82415 8.86242 7.8194C8.87904 7.8118 8.92168 7.79617 9.01354 7.78245C9.21765 7.75196 9.50511 7.75 10 7.75V6.25ZM8.75 9.22222C8.75 8.67931 8.75129 8.34011 8.78118 8.09313C8.7952 7.97725 8.81273 7.91048 8.8269 7.87221C8.83905 7.83939 8.84767 7.83015 8.85036 7.82716L7.73542 6.82371C7.44103 7.15082 7.3371 7.54061 7.29204 7.91294C7.24871 8.27109 7.25 8.71757 7.25 9.22222H8.75ZM9.5 17.75H15V16.25H9.5V17.75Z" fill="#252525"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
+                            <div class="iText">
+                                <div class="iHead">TEXT Reader</div>
+                                <div class="iPara">text to speak a content of the area</div>
+                            </div>
+                        </a>
+                    </button>
+                    <button class="upBtn" title="PDF Reader">
+                        <a href="./Assets/EXTRANAL/PDFReader.html" target="connect">
+                            <div class="ico">
+                                <svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.18 8.03933L18.6435 7.57589C19.4113 6.80804 20.6563 6.80804 21.4241 7.57589C22.192 8.34374 22.192 9.58868 21.4241 10.3565L20.9607 10.82M18.18 8.03933C18.18 8.03933 18.238 9.02414 19.1069 9.89309C19.9759 10.762 20.9607 10.82 20.9607 10.82M18.18 8.03933L13.9194 12.2999C13.6308 12.5885 13.4865 12.7328 13.3624 12.8919C13.2161 13.0796 13.0906 13.2827 12.9882 13.4975C12.9014 13.6797 12.8368 13.8732 12.7078 14.2604L12.2946 15.5L12.1609 15.901M20.9607 10.82L16.7001 15.0806C16.4115 15.3692 16.2672 15.5135 16.1081 15.6376C15.9204 15.7839 15.7173 15.9094 15.5025 16.0118C15.3203 16.0986 15.1268 16.1632 14.7396 16.2922L13.5 16.7054L13.099 16.8391M13.099 16.8391L12.6979 16.9728C12.5074 17.0363 12.2973 16.9867 12.1553 16.8447C12.0133 16.7027 11.9637 16.4926 12.0272 16.3021L12.1609 15.901M13.099 16.8391L12.1609 15.901" stroke="#252525" stroke-width="1.5"/>
+                                    <path d="M8 13H10.5" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M8 9H14.5" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M8 17H9.5" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157M21 14C21 17.7712 21 19.6569 19.8284 20.8284M4.17157 20.8284C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8284M19.8284 20.8284C20.7715 19.8853 20.9554 18.4796 20.9913 16" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
+                            <div class="iText">
+                                <div class="iHead">PDF Reader</div>
+                                <div class="iPara">text to speak a content of the area</div>
+                            </div>
+                        </a>
+                    </button>
+                    <button class="upBtn upBottom" title="GALLARY IMAGE Reader">
+                        <a href="./Assets/EXTRANAL/IMAGEReader.html" target="connect">
+                            <div class="ico">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="8" r="2" stroke="#252525" stroke-width="1.5"/>
+                                    <path d="M2 10.1537L2.98073 10.0129C9.95896 9.01086 15.9238 15.0312 14.8571 21.9998" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M22.0001 13.385L21.0266 13.2502C18.1829 12.8564 15.6098 14.2722 14.2847 16.5005" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                            </div>
+                            <div class="iText">
+                                <div class="iHead">GALLARY IMAGE Reader</div>
+                                <div class="iPara">text to speak a content of the area</div>
+                            </div>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./Assets/JS/mode.js"></script>
+    <script type="text/javascript" src="./Assets/JS/script.js"></script>
+
+
+
+</body>
+
+</html>

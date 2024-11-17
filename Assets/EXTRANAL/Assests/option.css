@@ -1,0 +1,52 @@
+.mContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+    margin: 0 20px;
+}
+
+.mContent textarea {
+    margin: 0;
+}
+
+.option-container .option-content {
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    padding: 5px;
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+    border-radius: 1pc;
+    border-top-right-radius: 1pc;
+    border-top-left-radius: 1pc;
+    border: 1px solid var(--bCSecondary--);
+}
+
+.option-content .option {
+    padding: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5pc;
+    background: transparent;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: var(--effects--);
+}
+
+svg {
+    width: 23px !important;
+    height: 23px !important;
+}
+
+.option:hover svg path, .option:hover svg circle {
+    stroke: var(--fEffects--) !important;
+}           
+
+.option:hover .st0 {
+    fill: var(--fEffects--) !important;
+}

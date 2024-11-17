@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SF;
+    letter-spacing: 1px;
+    color: var(--color2--);
+    font-weight: bold;
+    list-style: none;
+    appearance: none;
+    font-size: .8pc;
+    outline: none;
+    transition: all .1s cubic-bezier(0.24, 0.54, 0.41, 0.68);
+    text-decoration: none !important;
+}
+
+::selection {
+    background-color: var(--effects--);
+    color: var(--fEffects--);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bCSecondary--);
+    border-radius: 1pc;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1pc;
+    border: 2px solid var(--bCSecondary--);
+    background-color: var(--bCPrimary--);
+}

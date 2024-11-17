@@ -1,0 +1,71 @@
+@media screen and (max-width:500px) {
+   .container {
+    display: flex !important;
+    flex-direction: column-reverse;
+   }
+   .container .main-container {
+    flex-grow: 1;
+   }
+  .container .navigation {
+    display: flex !important;
+  }
+  .navigation .nav-option {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+  }
+
+  .nav-option .upload{
+    border-radius: 1pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .mode-container {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  
+  .nav-option .upload, .nav-option .mode-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .optionContainer {
+    left: 10px !important;
+  }
+
+  .optionContainer .optionContent {
+    width: 260px;
+  }
+
+  #optClose {
+    display: flex !important;
+  }
+
+  .FRContainer {
+    padding: 10px !important;
+  }
+  .optBtn .iFR {
+    flex-direction: column !important;
+  }
+
+  .opting {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    display: block !important;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .opting2 {
+    display: none;
+  }
+
+}
