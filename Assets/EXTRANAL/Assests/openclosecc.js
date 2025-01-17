@@ -8,7 +8,6 @@ contentCC.style.display = isContentVisible ? 'flex' : 'none';
 sizeCC.style.flexGrow = isContentVisible ? '0' : '1';
 
 opencloseCC.addEventListener('click', () => {
-    // Toggle the visibility of contentCC
     if (contentCC.style.display === "flex") {
         contentCC.style.display = "none";
         sizeCC.style.flexGrow = "1";
