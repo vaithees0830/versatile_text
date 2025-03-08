@@ -3,7 +3,7 @@ var startButton = document.getElementById('start');
     var recognition = new webkitSpeechRecognition();
     var isListening = false;
     var lastRecognizedText = '';
-    var displayedText = ''; // New variable to store displayed text
+    var displayedText = '';
 
     recognition.lang = window.navigator.language;
     recognition.interimResults = true;
@@ -27,8 +27,8 @@ var startButton = document.getElementById('start');
         const result = event.results[event.results.length - 1][0].transcript.trim();
         if (result !== lastRecognizedText) {
             lastRecognizedText += ' ' + result;
-            displayedText = result; // Update the displayed text with the last recognized text
-            resultElement.value = displayedText;  // Display only the last recognized text
+            displayedText = result;
+            resultElement.value = displayedText;
         }
     }
 
